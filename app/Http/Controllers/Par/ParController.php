@@ -38,7 +38,7 @@ class ParController extends Controller {
 
     public function index(Request $request)
     {
-     
+
         $close_data = SelectMaster::where('select_option','close_par')->orderBy('id','asc')->get();
 
         $datas = parDetails::orderBy('header_id', 'desc');
